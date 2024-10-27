@@ -1,5 +1,6 @@
 package core.contest.community.file.service.db;
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.service.data.FileDomain;
 import core.contest.community.file.service.storage.FileManager;
 import core.contest.community.file.service.FileRepository;
@@ -32,10 +33,16 @@ public class FileUpdater {
         fileRepository.updateAllByPost(postId, orderAndStoreFileName);
     }
 
-    public void associateFilesWithPost(Long postId, List<FileDomain> requestFiles) {
+    public void associateFilesWithPost(Long postId, List<FileDomain> requestFiles, FileLocation location) {
 
         if(requestFiles == null || requestFiles.isEmpty()) {return;}
 
+        sortingFiles(requestFiles, location);
+
+        fileRepository.updateAllByPost(postId, requestFiles, location);
+    }
+
+    private void sortingFiles(List<FileDomain> requestFiles,FileLocation location) {
         requestFiles.sort(Comparator.comparing(FileDomain::getOrder));
 
         long seq=0L;
@@ -44,9 +51,8 @@ public class FileUpdater {
             String storeFilName = fileManager.getStoreFileName(url);
             requestFile.setStoreFileName(storeFilName);
             requestFile.setOrder(seq++);
+            requestFile.setFileLocation(location);
         }
-
-        fileRepository.updateAllByPost(postId, requestFiles);
     }
 
 

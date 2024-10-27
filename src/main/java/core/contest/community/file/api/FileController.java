@@ -1,5 +1,6 @@
 package core.contest.community.file.api;
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.FileType;
 import core.contest.community.file.dto.FileResponse;
 import core.contest.community.file.service.FileService;
@@ -21,20 +22,40 @@ import java.util.concurrent.ConcurrentHashMap;
 public class FileController {
     private final FileService fileService;
 
-    @PostMapping(value="/api/images", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<Map> images(@RequestPart(value="file") MultipartFile file){
+    @PostMapping(value="/api/post-images", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map> postImages(@RequestPart(value="file") MultipartFile file){
 
-        String url = fileService.upload(file, FileType.IMAGE);
+        String url = fileService.upload(file, FileType.IMAGE, FileLocation.POST);
         Map<String, String> map = new ConcurrentHashMap<>();
         map.put("url", url);
 
         return ResponseEntity.ok(map);
     }
 
-    @PostMapping(value="/api/attachments", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<Map> attachments(@RequestPart(value="file") MultipartFile file){
+    @PostMapping(value="/api/post-attachments", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map> postAttachments(@RequestPart(value="file") MultipartFile file){
 
-        String url = fileService.upload(file, FileType.ATTACHMENT);
+        String url = fileService.upload(file, FileType.ATTACHMENT, FileLocation.POST);
+        Map<String, String> map = new ConcurrentHashMap<>();
+        map.put("url", url);
+
+        return ResponseEntity.ok(map);
+    }
+
+    @PostMapping(value="/api/contest-images", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map> contestImages(@RequestPart(value="file") MultipartFile file){
+
+        String url = fileService.upload(file, FileType.IMAGE, FileLocation.CONTEST);
+        Map<String, String> map = new ConcurrentHashMap<>();
+        map.put("url", url);
+
+        return ResponseEntity.ok(map);
+    }
+
+    @PostMapping(value="/api/contest-attachments", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map> contestAttachments(@RequestPart(value="file") MultipartFile file){
+
+        String url = fileService.upload(file, FileType.ATTACHMENT, FileLocation.CONTEST);
         Map<String, String> map = new ConcurrentHashMap<>();
         map.put("url", url);
 

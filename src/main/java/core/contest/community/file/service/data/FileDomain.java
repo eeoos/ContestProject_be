@@ -1,5 +1,6 @@
 package core.contest.community.file.service.data;
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.service.data.FileInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,6 +15,7 @@ public class FileDomain {
     private Long order;
     private String url;
 
+
     public void setUrl(String url) {
         this.url = url;
     }
@@ -22,6 +24,11 @@ public class FileDomain {
         if(info==null){info=FileInfo.builder().build();}
 
         info.setStoreFileName(storeFileName);
+    }
+
+    public void setFileLocation(FileLocation location) {
+        if(info==null){info=FileInfo.builder().build();}
+        info.setLocation(location);
     }
 
     public String getStoreFileName() {

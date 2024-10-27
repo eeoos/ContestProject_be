@@ -1,6 +1,7 @@
 package core.contest.community.file.service.data;
 
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.FileType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,7 @@ public class FileInfo{
     private String uploadFileName;
     private String storeFileName;
     private FileType fileType;
+    private FileLocation location;
 
 
     public void setStoreFileName(String storeFileName) {
@@ -23,6 +25,10 @@ public class FileInfo{
 
     public void setFileType(FileType fileType) {
         this.fileType = fileType;
+    }
+
+    public void setLocation(FileLocation location) {
+        this.location = location;
     }
 }
 

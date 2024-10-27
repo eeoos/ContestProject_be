@@ -1,5 +1,6 @@
 package core.contest.community.post.service;
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.service.FileService;
 import core.contest.community.file.service.data.FileDomain;
 import core.contest.community.file.service.db.FileUpdater;
@@ -37,7 +38,7 @@ public class PostService {
         Long postId = postCreator.create(post, writer);
 
         // 파일
-        fileUpdater.associateFilesWithPost(postId, requestFiles);
+        fileUpdater.associateFilesWithPost(postId, requestFiles, FileLocation.POST);
 
         return postId;
     }
@@ -64,7 +65,7 @@ public class PostService {
         userValidator.isSame(post.getWriter().getId(), loginUser.getId());
 
         // 파일 수정
-        fileService.update(postId, requestFiles, post.getFiles());
+        fileService.update(postId, requestFiles, post.getFiles(), FileLocation.POST);
 
         // 게시글 수정
         postUpdater.update(postId, postInfo);

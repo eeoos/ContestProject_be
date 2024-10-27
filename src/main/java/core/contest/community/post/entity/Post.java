@@ -2,6 +2,7 @@ package core.contest.community.post.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import core.contest.community.comment.entity.Comment;
+import core.contest.community.file.FileType;
 import core.contest.community.file.entity.File;
 import core.contest.community.file.service.data.FileDomain;
 import core.contest.community.post.service.data.*;
@@ -64,14 +65,19 @@ public class Post {
 
         if(getFiles()!=null && !getFiles().isEmpty()){
             int minIdx=0;
-            Long minOrder=getFiles().get(0).getOrderIndex();
-            for(File file : getFiles()) {
-                if(minOrder>file.getOrderIndex()) {
-                    minOrder=file.getOrderIndex();
-                    minIdx=minIdx+1;
+            boolean isImage=false;
+            int minOrder=99999;
+            for(int i=0;i<getFiles().size();i++){
+                File file = getFiles().get(i);
+                if(file.getFileType()== FileType.ATTACHMENT){continue;}
+                isImage=true;
+
+                if(file.getOrderIndex()<minOrder) {
+                    minIdx = i;
                 }
+
             }
-            thumbnail= getFiles().get(minIdx).toDomain();
+            if(isImage)thumbnail= getFiles().get(minIdx).toDomain();
         }
 
 

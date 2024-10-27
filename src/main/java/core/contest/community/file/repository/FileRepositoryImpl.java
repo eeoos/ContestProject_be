@@ -1,5 +1,7 @@
 package core.contest.community.file.repository;
 
+import core.contest.community.file.FileLocation;
+import core.contest.community.file.entity.Contest;
 import core.contest.community.file.repository.FileJpaRepository;
 import core.contest.community.file.service.data.FileDomain;
 import core.contest.community.file.service.data.FileInfo;
@@ -35,6 +37,7 @@ public class FileRepositoryImpl implements FileRepository {
                 .uploadName(fileInfo.getUploadFileName())
                 .createAt(LocalDateTime.now())
                 .fileType(fileInfo.getFileType())
+                .location(fileInfo.getLocation())
                 .build();
 
         return fileJpaRepository.save(file).getId();
@@ -73,19 +76,30 @@ public class FileRepositoryImpl implements FileRepository {
     }
 
     @Override
-    public void updateAllByPost(Long postId, List<FileDomain> files) {
-        Post post = postJpaRepository.getReferenceById(postId);
-        for(FileDomain file: files) {
-            String storeFileName = file.getStoreFileName();
-            Long order = file.getOrder();
-            fileJpaRepository.updateAllByPost(post, order, storeFileName);
+    public void updateAllByPost(Long postId, List<FileDomain> files, FileLocation location) {
+        if(location==FileLocation.POST){
+            Post post = postJpaRepository.getReferenceById(postId);
+            for(FileDomain file: files) {
+                String storeFileName = file.getStoreFileName();
+                Long order = file.getOrder();
+                fileJpaRepository.updateAllByPost(post, order, storeFileName);
+            }
         }
+        else if(location ==FileLocation.CONTEST){
+            //
+        }
+
     }
 
 
     @Override
     public void deleteAllByPostId(Long postId, List<String> storeFileNames) {
         fileJpaRepository.deleteAllByPostId(postId, storeFileNames);
+    }
+
+    @Override
+    public void deleteAllByStoreFileName(List<String> storeFileNames) {
+        fileJpaRepository.deleteAllByStoreFileName(storeFileNames);
     }
 
     @Override

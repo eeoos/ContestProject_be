@@ -27,6 +27,12 @@ public class FileDeleter {
         fileRepository.deleteAllByPostId(postId,storeNames);
     }
 
+    public void deleteFilesByUrl(List<String> urls){
+        if(urls == null || urls.isEmpty()){return;}
+        List<String> storeNames = getStoreNames(urls);
+        fileRepository.deleteAllByStoreFileName(storeNames);
+    }
+
     private List<String> getStoreNames(List<String> fullPaths){
         List<String> storeNames = new ArrayList<>();
         for (String fullPath : fullPaths){

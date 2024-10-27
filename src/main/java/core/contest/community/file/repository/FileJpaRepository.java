@@ -1,5 +1,6 @@
 package core.contest.community.file.repository;
 
+import core.contest.community.file.entity.Contest;
 import core.contest.community.file.entity.File;
 import core.contest.community.post.entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -25,10 +26,18 @@ public interface FileJpaRepository extends JpaRepository<core.contest.community.
     @Query("update File file set file.post=:post, file.orderIndex=:order where file.storeName =:storeName")
     void updateAllByPost(@Param("post") Post post, @Param("order") Long order, @Param("storeName")String storeName);
 
+    @Modifying
+    @Query("update File file set file.contest=:contest where file.storeName =:storeName")
+    void updateAllByContest(@Param("contest") Contest contest, @Param("storeName")String storeName);
+
 
     @Modifying
     @Query("delete from File file where file.post.id=:postId and file.storeName in :storeFileNames")
     void deleteAllByPostId(@Param("postId")Long postId, @Param("storeFileNames")List<String> storeFileNames);
+
+    @Modifying
+    @Query("delete from File file where file.storeName in :storeFileNames")
+    void deleteAllByStoreFileName(@Param("storeFileNames")List<String> storeFileNames);
 
     @Modifying
     @Query("delete from File file where file.id in :ids")

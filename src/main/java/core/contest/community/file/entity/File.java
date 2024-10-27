@@ -1,5 +1,6 @@
 package core.contest.community.file.entity;
 
+import core.contest.community.file.FileLocation;
 import core.contest.community.file.FileType;
 import core.contest.community.file.service.data.FileDomain;
 import core.contest.community.file.service.data.FileInfo;
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
 import static lombok.AccessLevel.PROTECTED;
 
@@ -27,9 +29,15 @@ public class File {
     @Column(name="file_id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = LAZY)
     @JoinColumn(name="post_id")
     private Post post;
+
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name="contest_id")
+    private Contest contest;
+
+    private FileLocation location;
 
     private Long orderIndex;
     private String storeName;

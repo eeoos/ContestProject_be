@@ -15,10 +15,6 @@ public interface FileManager {
 
     void delete(List<String> urls);
 
-
-
-
-
     void setUrls(List<FileDomain> fileDomains);
 
 

@@ -1,7 +1,7 @@
 package core.contest.community.post.service.data;
 
-import core.contest.community.file.service.data.FileDomain;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.file.service.data.FileDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

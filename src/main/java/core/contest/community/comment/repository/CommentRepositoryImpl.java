@@ -1,16 +1,15 @@
 package core.contest.community.comment.repository;
 
 import core.contest.community.comment.entity.Comment;
-import core.contest.community.comment.repository.CommentJpaRepository;
 import core.contest.community.comment.service.*;
 import core.contest.community.comment.service.date.*;
-import core.contest.community.global.exception.CustomException;
-import core.contest.community.global.exception.ErrorCode;
+import core.contest.global.exception.CustomException;
+import core.contest.global.exception.ErrorCode;
 import core.contest.community.post.entity.Post;
 import core.contest.community.post.repository.PostJpaRepository;
 import core.contest.community.post.service.data.PostDomain;
-import core.contest.community.user.entity.User;
-import core.contest.community.user.repository.UserJpaRepository;
+import core.contest.user.entity.User;
+import core.contest.user.repository.UserJpaRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

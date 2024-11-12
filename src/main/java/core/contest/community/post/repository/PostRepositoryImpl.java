@@ -1,13 +1,12 @@
 package core.contest.community.post.repository;
 
-import core.contest.community.global.exception.CustomException;
-import core.contest.community.global.exception.ErrorCode;
+import core.contest.global.exception.CustomException;
+import core.contest.global.exception.ErrorCode;
 import core.contest.community.post.entity.Post;
-import core.contest.community.post.repository.PostJpaRepository;
 import core.contest.community.post.service.PostRepository;
 import core.contest.community.post.service.data.*;
-import core.contest.community.user.entity.User;
-import core.contest.community.user.repository.UserJpaRepository;
+import core.contest.user.entity.User;
+import core.contest.user.repository.UserJpaRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

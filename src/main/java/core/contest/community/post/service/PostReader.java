@@ -1,14 +1,14 @@
 package core.contest.community.post.service;
 
-import core.contest.community.file.service.data.FileDomain;
-import core.contest.community.file.service.storage.FileManager;
+import core.contest.file.service.data.FileDomain;
+import core.contest.file.service.storage.FileManager;
 import core.contest.community.post.service.data.PostActivityDomain;
 import core.contest.community.post.service.data.PostDomain;
 import core.contest.community.post.service.data.PostPreviewDomain;
 import core.contest.community.post.service.data.PostSortType;
 import core.contest.community.post_like.service.PostLikeReader;
 import core.contest.community.scrap.service.ScrapReader;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.*;

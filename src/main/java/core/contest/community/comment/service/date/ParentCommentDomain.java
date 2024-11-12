@@ -1,7 +1,5 @@
 package core.contest.community.comment.service.date;
 
-import core.contest.community.comment.service.date.ChildCommentDomain;
-import core.contest.community.comment.service.date.CommentInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

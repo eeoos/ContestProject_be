@@ -1,8 +1,8 @@
 package core.contest.community.post.dto.request;
 
-import core.contest.community.file.FileLocation;
-import core.contest.community.file.service.data.FileDomain;
-import core.contest.community.file.service.data.FileInfo;
+import core.contest.file.FileLocation;
+import core.contest.file.service.data.FileDomain;
+import core.contest.file.service.data.FileInfo;
 
 public record FileRequest(
         Long order,

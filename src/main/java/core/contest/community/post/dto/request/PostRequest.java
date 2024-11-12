@@ -1,6 +1,5 @@
 package core.contest.community.post.dto.request;
 
-import core.contest.community.post.dto.request.FileRequest;
 import core.contest.community.post.service.data.PostInfo;
 
 import java.util.List;

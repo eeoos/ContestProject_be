@@ -1,7 +1,5 @@
 package core.contest.community.post_like.service;
 
-import core.contest.community.post_like.service.PostLikeDomain;
-
 public interface PostLikeRepository {
     boolean isLiked(Long postId, Long userId);
 

@@ -1,6 +1,5 @@
 package core.contest.community.school_and_department.service;
 
-import core.contest.community.school_and_department.service.SchoolRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.PageRequest;

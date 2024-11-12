@@ -2,11 +2,11 @@ package core.contest.community.post.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import core.contest.community.comment.entity.Comment;
-import core.contest.community.file.FileType;
-import core.contest.community.file.entity.File;
-import core.contest.community.file.service.data.FileDomain;
+import core.contest.file.FileType;
+import core.contest.file.entity.File;
+import core.contest.file.service.data.FileDomain;
 import core.contest.community.post.service.data.*;
-import core.contest.community.user.entity.User;
+import core.contest.user.entity.User;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -43,7 +43,6 @@ public class Post {
     @OneToMany(mappedBy = "post", fetch=LAZY)
     @JsonIgnore
     private List<File> files;
-
 
     private String title;
     private String contestTitle;

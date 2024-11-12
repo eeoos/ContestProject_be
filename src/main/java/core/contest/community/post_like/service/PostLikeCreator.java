@@ -1,11 +1,9 @@
 package core.contest.community.post_like.service;
 
 import core.contest.community.post.service.PostUpdater;
-import core.contest.community.post_like.service.PostLikeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 @Component
 @RequiredArgsConstructor

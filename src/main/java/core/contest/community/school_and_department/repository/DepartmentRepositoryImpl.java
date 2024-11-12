@@ -1,7 +1,6 @@
 package core.contest.community.school_and_department.repository;
 
 import core.contest.community.school_and_department.entity.Department;
-import core.contest.community.school_and_department.repository.DepartmentJpaRepository;
 import core.contest.community.school_and_department.service.DepartmentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

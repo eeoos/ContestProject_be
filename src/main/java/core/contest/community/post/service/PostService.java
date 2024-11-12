@@ -1,14 +1,12 @@
 package core.contest.community.post.service;
 
-import core.contest.community.file.FileLocation;
-import core.contest.community.file.service.FileService;
-import core.contest.community.file.service.data.FileDomain;
-import core.contest.community.file.service.db.FileUpdater;
-import core.contest.community.post.service.*;
-import core.contest.community.post.service.PostCreator;
+import core.contest.file.FileLocation;
+import core.contest.file.service.FileService;
+import core.contest.file.service.data.FileDomain;
+import core.contest.file.service.db.FileUpdater;
 import core.contest.community.post.service.data.*;
-import core.contest.community.user.service.data.UserDomain;
-import core.contest.community.user.service.UserValidator;
+import core.contest.user.service.data.UserDomain;
+import core.contest.user.service.UserValidator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

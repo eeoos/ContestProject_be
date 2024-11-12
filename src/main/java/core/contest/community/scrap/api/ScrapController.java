@@ -3,7 +3,7 @@ package core.contest.community.scrap.api;
 import core.contest.community.scrap.service.ScrapRepository;
 import core.contest.community.scrap.service.ScrapService;
 import core.contest.community.scrap.ScrapStatus;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

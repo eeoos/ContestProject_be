@@ -1,7 +1,6 @@
 package core.contest.community.notification.entity;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 import static jakarta.persistence.GenerationType.IDENTITY;

@@ -1,7 +1,6 @@
 package core.contest.community.comment.service;
 
 
-import core.contest.community.comment.service.CommentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

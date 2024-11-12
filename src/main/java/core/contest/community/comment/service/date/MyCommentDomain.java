@@ -1,6 +1,6 @@
 package core.contest.community.comment.service.date;
 
-import core.contest.community.file.service.data.FileDomain;
+import core.contest.file.service.data.FileDomain;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

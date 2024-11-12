@@ -1,7 +1,5 @@
 package core.contest.community.scrap.service;
 
-import core.contest.community.scrap.service.ScrapDomain;
-
 public interface ScrapRepository {
 
 

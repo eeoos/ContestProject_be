@@ -1,16 +1,13 @@
 package core.contest.community.comment.service;
 
-import core.contest.community.comment.service.CommentCreator;
-import core.contest.community.comment.service.CommentDeleter;
-import core.contest.community.comment.service.CommentReader;
 import core.contest.community.comment.service.date.CommentActivityDomain;
 import core.contest.community.comment.service.date.CommentDomain;
 import core.contest.community.comment.service.date.MyCommentDomain;
 import core.contest.community.comment.service.date.ParentCommentDomain;
 import core.contest.community.post.service.PostRepository;
 import core.contest.community.post.service.data.PostDomain;
-import core.contest.community.user.service.data.UserDomain;
-import core.contest.community.user.service.UserValidator;
+import core.contest.user.service.data.UserDomain;
+import core.contest.user.service.UserValidator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Slice;

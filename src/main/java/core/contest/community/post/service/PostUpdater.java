@@ -1,6 +1,5 @@
 package core.contest.community.post.service;
 
-import core.contest.community.post.service.PostRepository;
 import core.contest.community.post.service.data.PostInfo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

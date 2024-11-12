@@ -1,7 +1,7 @@
 package core.contest.community.comment.service.date;
 
-import core.contest.community.user.service.data.UserDomain;
-import core.contest.community.user.service.data.UserInfo;
+import core.contest.user.service.data.UserDomain;
+import core.contest.user.service.data.UserInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

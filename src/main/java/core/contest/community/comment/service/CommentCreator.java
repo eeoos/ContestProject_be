@@ -1,11 +1,9 @@
 package core.contest.community.comment.service;
 
-import core.contest.community.comment.service.CommentReader;
-import core.contest.community.comment.service.CommentRepository;
 import core.contest.community.comment.service.date.CommentInfo;
 import core.contest.community.post.service.data.PostDomain;
 import core.contest.community.post.service.PostUpdater;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

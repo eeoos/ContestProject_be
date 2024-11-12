@@ -1,7 +1,5 @@
 package core.contest.community.comment.service;
 
-import core.contest.community.comment.service.CommentRepository;
-import core.contest.community.comment.service.CommentUpdater;
 import core.contest.community.comment.service.date.CommentDomain;
 import core.contest.community.comment_like.service.CommentLikeDeleter;
 import lombok.RequiredArgsConstructor;

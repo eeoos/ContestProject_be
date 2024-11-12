@@ -1,6 +1,5 @@
 package core.contest.community.scrap.service;
 
-import core.contest.community.scrap.service.ScrapRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

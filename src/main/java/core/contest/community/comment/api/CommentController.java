@@ -6,7 +6,7 @@ import core.contest.community.comment.dto.ParentCommentResponse;
 import core.contest.community.comment.service.CommentService;
 import core.contest.community.comment.service.date.CommentActivityDomain;
 import core.contest.community.comment.service.date.ParentCommentDomain;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Slice;

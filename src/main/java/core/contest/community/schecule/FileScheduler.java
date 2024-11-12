@@ -1,8 +1,8 @@
 package core.contest.community.schecule;
 
-import core.contest.community.file.service.storage.FileManager;
-import core.contest.community.file.service.FileRepository;
-import core.contest.community.file.service.data.FileDomain;
+import core.contest.file.service.storage.FileManager;
+import core.contest.file.service.FileRepository;
+import core.contest.file.service.data.FileDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

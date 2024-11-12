@@ -1,6 +1,6 @@
 package core.contest.community.post.api;
 
-import core.contest.community.file.service.data.FileDomain;
+import core.contest.file.service.data.FileDomain;
 import core.contest.community.post.dto.request.FileRequest;
 import core.contest.community.post.dto.request.PostRequest;
 import core.contest.community.post.dto.response.PostPreviewResponse;
@@ -8,7 +8,7 @@ import core.contest.community.post.dto.response.PostResponse;
 import core.contest.community.post.service.PostService;
 import core.contest.community.post.service.data.PostDomain;
 import core.contest.community.post.service.data.PostSortType;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -41,7 +41,7 @@ public class PostController {
 
         Long postId = postService.write(request.toPostInfo(), requestFiles, writer);
 
-        Map<String, Long > apiResponse=new ConcurrentHashMap<>();
+        Map<String, Long > apiResponse= new ConcurrentHashMap<>();
         apiResponse.put("postId", postId);
 
         return ResponseEntity.ok().body(apiResponse);

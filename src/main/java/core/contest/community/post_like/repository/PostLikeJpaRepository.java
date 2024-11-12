@@ -1,14 +1,11 @@
 package core.contest.community.post_like.repository;
 
 
-import core.contest.community.post.entity.Post;
 import core.contest.community.post_like.entity.PostLike;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-
-import java.util.Optional;
 
 public interface PostLikeJpaRepository extends JpaRepository<PostLike, Long> {
     boolean existsByPost_IdAndUser_Id(Long postId, Long userId);

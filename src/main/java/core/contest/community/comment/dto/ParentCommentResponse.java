@@ -1,6 +1,5 @@
 package core.contest.community.comment.dto;
 
-import core.contest.community.comment.dto.ChildCommentResponse;
 import core.contest.community.comment.service.date.ChildCommentDomain;
 import core.contest.community.comment.service.date.ParentCommentDomain;
 

@@ -1,7 +1,7 @@
 package core.contest.community.scrap.entity;
 
 import core.contest.community.post.entity.Post;
-import core.contest.community.user.entity.User;
+import core.contest.user.entity.User;
 import jakarta.persistence.*;
 import lombok.*;
 

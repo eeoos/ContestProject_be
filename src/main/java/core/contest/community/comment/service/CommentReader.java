@@ -2,9 +2,9 @@ package core.contest.community.comment.service;
 
 import core.contest.community.comment.service.date.*;
 import core.contest.community.comment_like.service.CommentLikeDomain;
-import core.contest.community.file.service.data.FileDomain;
-import core.contest.community.file.service.storage.FileManager;
-import core.contest.community.user.service.data.UserDomain;
+import core.contest.file.service.data.FileDomain;
+import core.contest.file.service.storage.FileManager;
+import core.contest.user.service.data.UserDomain;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.PageRequest;

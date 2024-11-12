@@ -1,8 +1,7 @@
 package core.contest.community.post.service;
 
 import core.contest.community.comment.service.CommentDeleter;
-import core.contest.community.file.service.db.FileDeleter;
-import core.contest.community.post.service.PostRepository;
+import core.contest.file.service.db.FileDeleter;
 import core.contest.community.post.service.data.PostDomain;
 import core.contest.community.post_like.service.PostLikeDeleter;
 import core.contest.community.scrap.service.ScrapDeleter;

@@ -1,7 +1,5 @@
 package core.contest.community.comment_like.service;
 
-import core.contest.community.comment_like.service.CommentLikeDomain;
-
 import java.util.List;
 
 public interface CommentLikeRepository {

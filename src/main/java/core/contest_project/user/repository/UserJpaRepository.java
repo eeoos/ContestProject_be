@@ -1,6 +1,7 @@
 package core.contest_project.user.repository;
 
 import core.contest_project.user.entity.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

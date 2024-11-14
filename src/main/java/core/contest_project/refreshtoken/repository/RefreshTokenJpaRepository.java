@@ -1,6 +1,7 @@
 package core.contest_project.refreshtoken.repository;
 
 import core.contest_project.refreshtoken.entity.RefreshToken;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

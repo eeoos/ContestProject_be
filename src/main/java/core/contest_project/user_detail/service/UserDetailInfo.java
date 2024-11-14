@@ -1,5 +1,6 @@
 package core.contest_project.user_detail.service;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

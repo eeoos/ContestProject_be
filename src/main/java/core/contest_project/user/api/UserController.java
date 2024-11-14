@@ -10,6 +10,7 @@ import core.contest_project.user.service.UserService;
 import core.contest_project.user.service.data.UserDomain;
 import core.contest_project.user.service.data.UserInfo;
 import core.contest_project.user_detail.service.UserDetailInfo;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Slice;

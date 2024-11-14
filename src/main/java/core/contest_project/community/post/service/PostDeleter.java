@@ -4,6 +4,7 @@ import core.contest_project.community.comment.service.CommentDeleter;
 import core.contest_project.community.post.service.data.PostDomain;
 import core.contest_project.community.post_like.service.PostLikeDeleter;
 import core.contest_project.community.scrap.service.ScrapDeleter;
+
 import core.contest_project.file.service.db.FileDeleter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

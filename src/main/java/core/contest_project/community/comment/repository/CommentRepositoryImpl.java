@@ -10,6 +10,7 @@ import core.contest_project.global.exception.CustomException;
 import core.contest_project.global.exception.ErrorCode;
 import core.contest_project.user.entity.User;
 import core.contest_project.user.repository.UserJpaRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

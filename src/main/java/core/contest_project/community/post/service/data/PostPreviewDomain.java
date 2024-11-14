@@ -1,5 +1,6 @@
 package core.contest_project.community.post.service.data;
 
+
 import core.contest_project.file.service.data.FileDomain;
 import lombok.Builder;
 import lombok.Getter;

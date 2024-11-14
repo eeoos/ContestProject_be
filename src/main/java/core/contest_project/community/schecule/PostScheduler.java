@@ -1,6 +1,7 @@
 package core.contest_project.community.schecule;
 
 import core.contest_project.community.post.service.PostRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

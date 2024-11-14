@@ -3,6 +3,7 @@ package core.contest_project.user.service;
 import core.contest_project.user.service.data.UserDomain;
 import core.contest_project.user.service.data.UserInfo;
 
+
 public interface UserRepository {
     Long create(UserInfo user);
 

@@ -6,6 +6,7 @@ import core.contest_project.user_detail.UserDetailType;
 import core.contest_project.user_detail.entity.UserDetail;
 import core.contest_project.user_detail.service.UserDetailInfo;
 import core.contest_project.user_detail.service.UserDetailRepository;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

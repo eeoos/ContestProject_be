@@ -4,6 +4,7 @@ import core.contest_project.user.Grade;
 import core.contest_project.user.Role;
 import core.contest_project.user.service.data.UserInfo;
 
+
 public record SignUpRequest(
         String nickname,
         String email,

@@ -1,6 +1,7 @@
 package core.contest_project.community.comment.repository;
 
 import core.contest_project.community.comment.entity.Comment;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.jpa.repository.JpaRepository;

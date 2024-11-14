@@ -2,6 +2,7 @@ package core.contest_project.community.school_and_department.repository;
 
 import core.contest_project.community.school_and_department.entity.Department;
 import core.contest_project.community.school_and_department.service.DepartmentRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

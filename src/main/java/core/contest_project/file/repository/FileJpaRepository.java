@@ -3,6 +3,7 @@ package core.contest_project.file.repository;
 import core.contest_project.contest.entity.Contest;
 import core.contest_project.file.entity.File;
 import core.contest_project.community.post.entity.Post;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

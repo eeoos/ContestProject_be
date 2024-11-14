@@ -2,6 +2,7 @@ package core.contest_project.user_detail.service;
 
 import core.contest_project.user_detail.UserDetailType;
 
+
 import java.util.List;
 
 public interface UserDetailRepository {

@@ -2,6 +2,7 @@ package core.contest_project.user_detail.entity;
 
 import core.contest_project.user.entity.User;
 import core.contest_project.user_detail.UserDetailType;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

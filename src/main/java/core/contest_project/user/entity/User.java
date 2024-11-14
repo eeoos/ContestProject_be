@@ -5,6 +5,7 @@ import core.contest_project.user.Role;
 import core.contest_project.user.SuspensionStatus;
 import core.contest_project.user.service.data.UserDomain;
 import core.contest_project.user.service.data.UserInfo;
+
 import jakarta.persistence.*;
 import lombok.*;
 

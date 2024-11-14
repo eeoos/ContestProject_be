@@ -2,6 +2,7 @@ package core.contest_project.community.comment_like.repository;
 
 
 import core.contest_project.community.comment_like.entity.CommentLike;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

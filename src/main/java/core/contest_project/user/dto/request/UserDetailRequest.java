@@ -3,6 +3,7 @@ package core.contest_project.user.dto.request;
 
 import core.contest_project.user_detail.service.UserDetailInfo;
 
+
 import java.util.List;
 
 public record UserDetailRequest(

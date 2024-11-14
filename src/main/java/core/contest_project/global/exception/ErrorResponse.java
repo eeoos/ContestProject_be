@@ -1,5 +1,6 @@
 package core.contest_project.global.exception;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

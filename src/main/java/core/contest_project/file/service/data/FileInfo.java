@@ -3,6 +3,7 @@ package core.contest_project.file.service.data;
 
 import core.contest_project.file.FileLocation;
 import core.contest_project.file.FileType;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

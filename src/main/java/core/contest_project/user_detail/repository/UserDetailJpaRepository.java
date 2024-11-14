@@ -2,6 +2,7 @@ package core.contest_project.user_detail.repository;
 
 import core.contest_project.user_detail.UserDetailType;
 import core.contest_project.user_detail.entity.UserDetail;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

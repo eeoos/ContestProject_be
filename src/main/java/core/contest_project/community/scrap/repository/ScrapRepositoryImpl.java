@@ -7,6 +7,7 @@ import core.contest_project.community.scrap.service.ScrapDomain;
 import core.contest_project.community.scrap.service.ScrapRepository;
 import core.contest_project.user.entity.User;
 import core.contest_project.user.repository.UserJpaRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;

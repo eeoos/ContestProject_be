@@ -9,6 +9,7 @@ import core.contest_project.community.post.service.data.PostDomain;
 import core.contest_project.community.post.service.data.PostSortType;
 import core.contest_project.file.service.data.FileDomain;
 import core.contest_project.user.service.data.UserDomain;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -41,7 +42,7 @@ public class PostController {
 
         Long postId = postService.write(request.toPostInfo(), requestFiles, writer);
 
-        Map<String, Long > apiResponse=new ConcurrentHashMap<>();
+        Map<String, Long > apiResponse= new ConcurrentHashMap<>();
         apiResponse.put("postId", postId);
 
         return ResponseEntity.ok().body(apiResponse);

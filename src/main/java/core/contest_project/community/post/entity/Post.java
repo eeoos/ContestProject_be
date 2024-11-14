@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import core.contest_project.community.comment.entity.Comment;
 import core.contest_project.community.post.service.data.*;
 
+
 import core.contest_project.file.entity.File;
 import core.contest_project.file.service.data.FileDomain;
 import core.contest_project.user.entity.User;
@@ -20,7 +21,7 @@ import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
 import static lombok.AccessLevel.PROTECTED;
 
-@Entity
+ @Entity
 @NoArgsConstructor(access=PROTECTED)
 @Builder
 @AllArgsConstructor
@@ -43,7 +44,6 @@ public class Post {
     @JsonIgnore
     private List<File> files;
 
-
     private String title;
     private String contestTitle;
     private String content;
@@ -64,15 +64,21 @@ public class Post {
 
         /*if(getFiles()!=null && !getFiles().isEmpty()){
             int minIdx=0;
-            Long minOrder=getFiles().get(0).getOrderIndex();
-            for(File file : getFiles()) {
-                if(minOrder>file.getOrderIndex()) {
-                    minOrder=file.getOrderIndex();
-                    minIdx=minIdx+1;
+            boolean isImage=false;
+            int minOrder=99999;
+            for(int i=0;i<getFiles().size();i++){
+                File file = getFiles().get(i);
+                if(file.getFileType()== FileType.ATTACHMENT){continue;}
+                isImage=true;
+
+                if(file.getOrderIndex()<minOrder) {
+                    minIdx = i;
                 }
+
             }
             thumbnail= getFiles().get(minIdx).toDomain();
         }*/
+
 
 
 

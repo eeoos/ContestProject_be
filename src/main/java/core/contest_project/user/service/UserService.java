@@ -14,6 +14,7 @@ import core.contest_project.refreshtoken.service.RefreshTokenRepository;
 import core.contest_project.community.scrap.service.ScrapRepository;
 import core.contest_project.user_detail.service.UserDetailInfo;
 import core.contest_project.user_detail.service.UserDetailService;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Slice;

@@ -1,6 +1,7 @@
 package core.contest_project.user.service.data;
 
 import core.contest_project.user.Grade;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

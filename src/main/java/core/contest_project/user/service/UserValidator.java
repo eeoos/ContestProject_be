@@ -3,6 +3,7 @@ package core.contest_project.user.service;
 import core.contest_project.user.service.data.UserDomain;
 import core.contest_project.global.exception.CustomException;
 import core.contest_project.global.exception.ErrorCode;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

@@ -7,6 +7,7 @@ import core.contest_project.file.entity.File;
 import core.contest_project.file.service.FileRepository;
 import core.contest_project.community.post.entity.Post;
 import core.contest_project.community.post.repository.PostJpaRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;

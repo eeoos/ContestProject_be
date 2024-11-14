@@ -10,6 +10,7 @@ import core.contest_project.community.post.entity.Post;
 import core.contest_project.community.post.service.data.PostPreviewDomain;
 import core.contest_project.file.service.data.FileDomain;
 import core.contest_project.user.entity.User;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -3,6 +3,7 @@ package core.contest_project.user.service.data;
 
 import core.contest_project.user.SuspensionStatus;
 import core.contest_project.user_detail.service.UserDetailInfo;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

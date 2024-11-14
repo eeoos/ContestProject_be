@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 
 //@EnableScheduling
 @SpringBootApplication
+
 public class ContestApplication {
 
 	public static void main(String[] args) {
@@ -18,4 +19,6 @@ public class ContestApplication {
 		return new Hibernate5JakartaModule();
 	}
 
+
 }
+
